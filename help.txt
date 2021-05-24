@@ -1,0 +1,19 @@
+$ xvm enable <command> <default path>
+
+Enable xvm for a command. If no local configuration overrides the command, xvm will use default path for execution.
+
+$ xvm disable <command>
+
+Removes xvm for command.
+
+$ xvm get <command>
+
+Checks for the command overrides in the directory tree. Lists the path that will be used.
+
+$ xvm set <command> <path>
+
+Overrides the path of the command in the current directory. Writes a .xvm.conf file if it doesn't exist.
+
+$ xvm unset <command>
+
+Removes the command from the overrides in the current directory.
